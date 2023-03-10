@@ -1,0 +1,140 @@
+*{
+	margin: 0;
+	padding:0;
+}
+
+	#nav-bar{
+	height:70px;
+}
+
+.clr{
+	clear:both;
+	}
+	
+.top{
+	position:fixed;
+	top:0;
+	background: rgb(251,104,14);
+	background:linear-gradient(18deg, rgba(246,187,119,1) 0%, rgba(238,120,134,1) 35%, rgba(222,122,233,1) 89%,
+		rgba(238,186,255,1) 100%);
+	padding:6px 2px 6px 2px;
+	transition:all 0.3s ;
+	z-index:1;
+
+	}
+	
+.logo img{
+	z-index:2;
+	position:relative;
+	float:left;
+	margin-left:20px;
+	width:6%;
+	height:auto;
+	}
+
+.top:hover .logo img{
+	transform:rotate(120deg);
+	transition:2s ease-out ;
+}
+
+.logo .choo{
+	position:absolute;
+	color:whitesmoke;
+	letter-spacing:2px;
+	transform:scaleX(0.01);
+	font:normal 560 22px Ariel,sans-serif;
+	margin:32px 0px 0px 10px;}
+.top:hover .choo{
+	z-index:0;
+	transform:scaleX(0.95);
+	margin:32px 0px 0px 112px;
+	transition:1.7s ease-out;}
+
+ 
+ #nav-bar{
+	 float:right;
+	 width:70%;
+	
+	 }
+ #nav-bar .ul_1{ 
+	 margin-top:2.4%;
+	 list-style:none;
+	 }
+ 
+ #nav-bar .ul_1 li{        
+	  display:inline;
+	 
+	 }
+	  
+.ul_1 .emp{
+	  text-decoration:none;
+	  font:normal 560 20px/20px Ariel, sans-serif;
+	  padding:15px;
+	  color:rgba(204, 243, 252,1);
+	  position:relative;
+	 }
+
+#nav-bar .ul_1 .emp:before{
+	position:absolute;
+	content:"";
+	left:0;
+	bottom:0px;
+	height:3.5px;
+	width:0%;
+	opacity:0;
+	background-color:rgba(30,28,28,1.00);
+	transition:all 0.4s ease-in-out 0.7s;
+	transition-delay:0s;
+	border-radius:0px;	
+}
+
+.ul_1 .emp:hover{
+	border-top:1px solid white;border-left:1px solid white;
+	border-right:1px solid white;
+	color:rgba(30,28,28,1.00);
+	font-size:22px;
+	
+	transition:0.3s all ease-in-out;
+}
+
+#nav-bar .emp:hover:before{
+	opacity:1;
+	width:100%;
+}
+
+.dropbtn {
+
+	position:relative;
+	}
+
+.dropbtn .dropdown-content
+{
+	display:none;
+	padding:0px;
+	margin-top:15px;width:200px;
+	background-color:#e4e4e4;
+	position:absolute;
+	left:0;
+	z-index:10000;
+	}
+
+.dropbtn .dropdown-content a
+{
+	float:none;
+	color:#636363;
+	padding:16px 2px;
+	display: block;
+	text-align:left;
+	text-decoration:none;
+	font:normal small-caps 550 22px/20px Baskerville, "Palatino Linotype", Palatino, "Century Schoolbook L", "Times New Roman", "serif";
+	}
+
+.dropbtn:hover .dropdown-content {
+	display: block;
+	}
+
+.dropdown-content a:hover {
+	color:black;
+	border-bottom:2px solid black;
+	background:white;
+	}

@@ -1,0 +1,52 @@
+body {
+ position:absolute;
+	background-image:url("back.jpg");
+background-repeat:no-repeat;
+  background-size:100% 100%;}
+
+  .effect{
+	box-shadow:0px 0px 0px 0px transparent;
+  border: 2px solid #FF0000;
+  padding: 8px;
+min-height:120px;
+min-width: 520px;
+	background-color:#262626;
+  margin: 260px 100px 150px 100px;
+  border-radius:20px;
+
+}
+.gayab{
+	width:100%;
+	position: relative;
+  animation-name: ani;
+  animation-duration: 4s;
+}
+@keyframes ani {
+  0% {left:-20%;}
+	
+	50%{left:50%;}
+	
+}
+
+.effect:hover{
+	box-shadow:0px 0px 15px 3px #00e08a;
+	transition:0.5s all;
+}
+.para {display:sticky;	
+    font-size:28px;
+      text-align: justify;
+      font-weight:bold;
+    font-family:Footlight MT Light;
+    color:#FFFAFA;
+        margin-bottom:0%;
+    padding: 9px 6px 4px 5px;
+      }
+    .para:hover{
+        color:goldenrod;
+        content:"";
+        font-size:30px;
+        transition:.4s all ease-in-out;
+        margin-bottom:-1%;
+        
+    }
+    

@@ -1,0 +1,108 @@
+
+body{
+	background:linear-gradient(52deg, rgba(4,39,41,1) 0%, rgba(28,28,28,1) 50%, rgba(4,39,41,1) 100%)fixed;
+	opacity:1;
+	font:normal small-caps 500 25px/25px black ;
+}
+
+.clr{
+	clear:both;
+}
+
+.container{
+	
+	border-radius:10px;
+	margin:8% 12% 0% 16%;
+	
+}
+
+
+.item{
+	border-left:2px solid rgba(255,255,255,0.5);
+	border-right:2px solid rgba(255,255,255,0.55);
+	border-radius:15px;/*30px 30px /130px 130px;*/
+	box-shadow:0px 0px 12px rgba(0,0,0,1);
+	margin:5% 0% -2% 0%;
+	background:rgba(255, 255, 255,0) url("images/52.png") no-repeat fixed top;
+	opacity:0.98;
+	background-size:71% 170%;
+	background-position:48%;
+	padding:2% 0% 2% 2%;
+	height:35%;
+}
+
+.item:hover{
+	border-radius:15px;
+	opacity:1;
+	margin:5% -0.7% -2% -0.7%;
+	padding:2% 0% 2% 2%;
+	border-left:2px solid rgba(255,255,255,1);
+	border-right:2px solid rgba(255,255,255,1);
+	background:rgba(255, 255, 255,0.1)url("images/52.png") no-repeat fixed top;
+	background-size:71% 170%;
+	background-position:48%;
+	box-shadow:0px 0px 20px rgba(23, 228, 255,0.4);
+	transition:0.5s all ease-in-out;
+}
+
+.item:hover img{
+	transition:0.6s ease-in-out;
+}
+.item:hover .abnormal-link{
+	width:62%;
+	transition:0.6s ease-out;}
+
+.item img{
+	margin:2% 0% 0% 2.5%;
+	border-radius:5px;
+	float:left;
+	width:28%;
+	height:80%;
+	opacity:0.80;
+	box-shadow:0px 0px 3px #ffad07;
+}
+
+.item img:hover{
+	width:29%;
+	height:82%;
+	opacity:1;
+	box-shadow:0px 0px 10px #ffad06;
+	transition:0.3s ease-in-out;
+}
+.sidelines{
+	opacity:0.8;
+	margin-left:-7%;
+	border-radius:15px;
+	background:linear-gradient(to top, rgba(0,255,248,1) 12%, rgba(54,138,255,1) 100%);
+}
+
+.sidelines:hover{
+	opacity:1;
+	border-radius:30px 30px /130px 130px;
+	background:linear-gradient(to bottom, rgba(0,255,248,1) 12%, rgba(54,138,255,1) 100%);
+	transition:0.6s all ease-in;
+}
+
+.abnormal-link{
+	list-style-type:none;
+	text-decoration:none;
+	color:#d1fffc;
+	float:right;
+	width:66%;
+	display:inline-block;
+	text-shadow:0px 0px 10px black;
+}
+
+.abnormal-link:hover{
+	color:white;	
+}
+
+.def_txt{
+	display:inline;
+}
+
+.abnormal-link .def_txt{
+	padding-top:15px;
+	border-top:3px solid #20d69d;	
+	transition:2s width ease-in;
+}

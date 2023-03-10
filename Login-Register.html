@@ -1,0 +1,99 @@
+<html>
+<head>
+	<title>Login And Registration Form</title>
+	<link rel="stylesheet" type="text/css" href="style.css">
+	<link rel="stylesheet" type="text/css" href="navbar2.css">
+</head>
+	<script>
+	function lshow()
+		{
+		var u = document.getElementById("username-field").value;
+		var p = document.getElementById("password-field").value;
+		localStorage.setItem('user',u);
+		localStorage.setItem('pass',p);
+		}
+	function rshow()
+		{
+		var u = document.getElementById("username-field2").value;
+		var e = document.getElementById("email-field").value;
+		var p = document.getElementById("password-field2").value;
+		localStorage.setItem('user',u);
+		localStorage.setItem('email',e);
+		localStorage.setItem('pass',p);
+		}
+	</script>
+<body>
+	<header>
+		<div class="top">
+		 <div class="logo"><a href="#"><img src="images/logo_try_3.png" alt="crypto"><div class="choo">Cyber Rift</div></a></div>
+		  <nav id="nav-bar">	
+			  <ul class="ul_1">
+				  <li><a class="emp" href="CyberRift.html">HOME</a></li>
+				  <li><a class="emp" href="about.html">ABOUT</a></li>
+				  <li><a class="emp" href="#">DEALS &#38; OFFERS</a></li>
+				  <li class="dropbtn"><a class="emp" href="#">CATEGORIES</a>
+					   <ul class="dropdown-content">
+						  <li><a href="Processors.html">Processors</a></li>
+						   <li><a href="Display.html">Display</a></li>
+						   <li><a href="Keyboard.html">Keyboard</a></li>
+						   <li><a href="Camera.html">Camera module</a></li>
+						   <li><a href="Cooling Fan + Heat Sink.html">Thermal Sink</a></li>
+						   <li><a href="Graphics Card.html">Graphics Card</a></li>
+						   <li><a href="Hard Drive.html">Hard Disk &#38; storage</a></li>
+						   <li><a href="Motherboard.html">Motherboard/ Architecture</a></li>
+						   <li><a href="RAM.html">RAM</a></li>
+					  </ul></li>
+				  <li><a class="emp" href="Guidebook.html">GUIDE BOOK</a></li>
+				  <li><a class="emp" href="#">CONTACT US</a></li>
+			  </ul>
+		  </nav>
+		  <div class="clr"></div>
+		 </div>
+	  </header>
+  
+	<div class="hero">
+		<div class="form-box">
+			<div class="button-box">
+				<div id="btn"> </div>
+				<button type="button" class="toggle-btn" onclick="login()">Log In</button>
+				<button type="button" class="toggle-btn" onclick="register()">Register</button></div>
+			
+			<div class="social-icons">
+			&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;
+			<img src="images/login/fb.png" alt="fakebook">
+			<img src="images/login/tw.png" alt="twitter">
+			<img src="images/login/gp.png" alt="google"> 
+			</div>
+			<form id="login" action="click88.html" method="get" class="input-group">
+				<input type="text" id="username-field" class="input-field" placeholder="Enter User ID" required>
+				<input type="password" id="password-field" class="input-field" placeholder="Enter Password" required>
+				<input type="checkbox" class="check-box"><span>Remember Password</span>
+				<button type="submit" class="submit-btn" onclick="lshow()">Log In</button>
+			</form>
+			<form id="register" action="click99.html" method="post" class="input-group">
+				<input type="text" id="username-field2" class="input-field" placeholder="Enter User ID" required>
+				<input type="email" id="email-field" class="input-field" placeholder="Enter Email ID" required>
+				<input type="password" id="password-field2" class="input-field" placeholder="Enter Password" required>
+				<input type="checkbox" class="check-box"><span>I agree to the terms & conditions.</span>
+				<button type="submit" class="submit-btn" onclick="rshow()">Register</button>
+			</form>
+		</div>
+	</div>
+	<script>
+	var x = document.getElementById("login");
+	var y = document.getElementById("register");
+	var z = document.getElementById("btn");
+	
+	function register(){
+		x.style.left = "-400px";
+		y.style.left = "50px";
+		z.style.left = "110px";
+	}
+	function login(){
+		x.style.left = "50px";
+		y.style.left = "450px";
+		z.style.left = "0";
+	}
+	</script>
+</body>
+</html>
